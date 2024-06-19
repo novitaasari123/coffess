@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+.snack {
+    background-color: #333333;
+    width: 100%;
+}
+
+.snack .snack-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.snack-header h3 {
+    color: orange;
+    padding: 10px 30px;
+}
+
+.snack-header h4 {
+    color: orange;
+    padding: 10px 20px;
+}
+
+.snack .snack-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    background-color: #404040;
+}
+
+.snack .snack-content .croissant,
+.sandwich,
+.brownies,
+.donat,
+.cookies,
+.banana,
+.toast {
+    width: 250px;
+}
+
+.snack .snack-content .croissant .croissant-image img {
+    border-radius: 100%;
+}
+
+.snack .snack-content .sandwich .sandwich-image img {
+    border-radius: 100%;
+}
+
+.snack .snack-content .brownies .brownies-image img {
+    border-radius: 100%;
+}
+
+.snack .snack-content .donat .donat-image img {
+    border-radius: 100%;
+}
+
+.snack .snack-content .cookies .cookies-image img {
+    border-radius: 100%;
+}
+
+.snack .snack-content .banana .banana-image img {
+    border-radius: 100%;
+}
+
+.snack .snack-content .toast .toast-image img {
+    border-radius: 100%;
+}
+
+.snack .snack-content .croissant-body,
+.sandwich-body,
+.brownies-body,
+.donat-body,
+.cookies-body,
+.banana-body,
+.toast-body {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.snack .snack-content .croissant-body h2,
+.sandwich-body h2,
+.brownies-body h2,
+.donat-body h2,
+.cookies-body h2,
+.banana-body h2,
+.toast-body h2 {
+    color: orange;
+}
+
+.snack .snack-content .croissant-body label,
+.sandwich-body label,
+.brownies-body label,
+.donat-body label,
+.cookies-body label,
+.banana-body label,
+.toast-body label {
+    margin-top: 10px;
+    color: white;
+}
+
+/* Footer */
+
+
+.footer {
+    background-color: #404040;
+    border-top: 2px solid #333333;
+}
+
+.footer .footer-box {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer-box .social-media a {
+    color: white;
+    background-color: #333333;
+    border-radius: 50%;
+    font-size: 17px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.footer .footer-box .social-media a:hover {
+    opacity: .7;
+    transition: .5s all ease-in-out;
+}
+
+.footer .footer-box .copyright {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .footer-box .brand {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .footer-box .brand span {
+    color: orange;
+}
+
+
+
+/* Responsive */
+
+@media(max-width: 992px) {
+
+    .snack-header .logo a {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .snack .snack-content .croissant,
+    .sandwich,
+    .brownies,
+    .donat,
+    .cookies,
+    .banana,
+    .toast {
+        margin: 20px;
+    }
+}
+
+@media(max-width: 700px) {
+    .footer .footer-box .social-media a {
+        color: white;
+        background-color: #333333;
+        border-radius: 50%;
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .footer .footer-box .copyright {
+        color: white;
+        font-size: 15px;
+    }
+
+    .footer .footer-box .brand {
+        color: white;
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 500px) {
+    /* footer */
+
+    .footer .footer-box {
+        flex-direction: column;
+    }
+
+    .footer .footer-box .social-media a {
+        color: white;
+        background-color: #333333;
+        border-radius: 50%;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .footer .footer-box .copyright {
+        color: white;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .footer .footer-box .brand {
+        color: white;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+}
+

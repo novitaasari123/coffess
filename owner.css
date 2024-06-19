@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0px 5px 10px 0px #333333;
+}
+
+header .logo a {
+    font-size: 30px;
+    color: white;
+    padding: 15px 30px;
+}
+
+header .logo a span {
+    color: orange;
+}
+
+/* Testimonial */
+
+#owners {
+    padding: 5rem 0;
+    background: rgb(32, 32, 32);
+  }
+  
+  .owner-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: white;
+  }
+
+  .owner-name {
+    color: white;
+  }
+
+  .owner-text {
+    color: white;
+  }
+  
+  .owner-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+  
+  .owner-box .checked {
+    color: #ff9529;
+  }
+  
+  .owner-box .testimonial-text {
+    margin: 1rem 0;
+    color: white;
+  }
+  
+  .owner-box {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .owner-photo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  /* social media */
+  
+  .social-media a {
+    color: white;
+    background-color: #333333;
+    border-radius: 50%;
+    font-size: 17px;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .social-media a:hover {
+    opacity: .7;
+    transition: .5s all ease-in-out;
+}
+  
+  /* Responsive */
+
+@media(max-width: 992px) {
+
+    /* Header */
+
+    header {
+        flex-direction: column;
+        height: 150px;
+        background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+    }
+}
+
+@media(max-width: 700px) {
+
+    /* social media */
+
+    .social-media a {
+        color: white;
+        background-color: #333333;
+        border-radius: 50%;
+        font-size: 16px;
+        padding: 5px;
+    }
+}
+
+@media(max-width: 500px) {
+
+    /* header */
+
+    header {
+        height: 130px;
+    }
+
+    header .logo a {
+        font-size: 23px;
+    }
+
+    /* social media */
+    .social-media a {
+        color: white;
+        background-color: #333333;
+        border-radius: 50%;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+}
+
+@media(max-width: 410px) {
+
+    /* header */
+
+    header {
+        height: 120px;
+    }
+
+    header .logo a {
+        font-size: 20px;
+        color: white;
+        padding: 15px 30px;
+    }
+}
